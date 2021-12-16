@@ -46,7 +46,7 @@ jobs:
             flags: -e '--privileged -v /dev:/dev'
             cmd: speedy
             dst: Cadmium/cadmium-speedy.img.gz
-            - id: trogdor
+          - id: trogdor
             src: .
             os: debian:bullseye
             flags: -e '--privileged -v /dev:/dev'
