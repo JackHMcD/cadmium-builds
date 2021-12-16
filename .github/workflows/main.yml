@@ -34,18 +34,21 @@ jobs:
             flags: -e '--privileged -v /dev:/dev'
             cmd: bob
             dst: Cadmium/cadmium-bob.img.gz
-          - id: minnie
-            src: .
-            os: debian:bullseye
-            flags: -e '--privileged -v /dev:/dev'
-            cmd: minnie
-            dst: Cadmium/cadmium-minnie.img.gz
-          - id: speedy
-            src: .
-            os: debian:bullseye
-            flags: -e '--privileged -v /dev:/dev'
-            cmd: speedy
-            dst: Cadmium/cadmium-speedy.img.gz
+            
+            # minnie and speedy currently don't build lel
+          # - id: minnie
+            #src: .
+            #os: debian:bullseye
+            #flags: -e '--privileged -v /dev:/dev'
+            #cmd: minnie
+            #dst: Cadmium/cadmium-minnie.img.gz
+          #- id: speedy
+            #src: .
+            #os: debian:bullseye
+            #flags: -e '--privileged -v /dev:/dev'
+            #cmd: speedy
+            #dst: Cadmium/cadmium-speedy.img.gz
+            
           - id: trogdor
             src: .
             os: debian:bullseye
