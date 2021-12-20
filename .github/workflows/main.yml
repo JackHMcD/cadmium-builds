@@ -16,12 +16,12 @@ jobs:
             flags: -e '--privileged -v /dev:/dev'
             cmd: lazor
             dst: Cadmium/cadmium-lazor.img.gz
-          - id: duet
+          - id: krane
             src: .
             os: debian:bullseye
             flags: -e '--privileged -v /dev:/dev'
-            cmd: duet
-            dst: Cadmium/cadmium-duet.img.gz
+            cmd: krane
+            dst: Cadmium/cadmium-krane.img.gz
           - id: kevin
             src: .
             os: debian:bullseye
@@ -35,19 +35,19 @@ jobs:
             cmd: bob
             dst: Cadmium/cadmium-bob.img.gz
             
-            # minnie and speedy currently don't build lel
-          # - id: minnie
-            #src: .
-            #os: debian:bullseye
-            #flags: -e '--privileged -v /dev:/dev'
-            #cmd: minnie
-            #dst: Cadmium/cadmium-minnie.img.gz
-          #- id: speedy
-            #src: .
-            #os: debian:bullseye
-            #flags: -e '--privileged -v /dev:/dev'
-            #cmd: speedy
-            #dst: Cadmium/cadmium-speedy.img.gz
+          - id: minnie
+            src: .
+            os: debian:bullseye
+            flags: -e '--privileged -v /dev:/dev'
+            cmd: minnie
+            dst: Cadmium/cadmium-minnie.img.gz
+            
+          - id: speedy
+            src: .
+            os: debian:bullseye
+            flags: -e '--privileged -v /dev:/dev'
+            cmd: speedy
+            dst: Cadmium/cadmium-speedy.img.gz
             
           - id: homestar
             src: .
@@ -55,6 +55,13 @@ jobs:
             flags: -e '--privileged -v /dev:/dev'
             cmd: homestar
             dst: Cadmium/cadmium-homestar.img.gz
+            
+          - id: coachz
+            src: .
+            os: debian:bullseye
+            flags: -e '--privileged -v /dev:/dev'
+            cmd: coachz
+            dst: Cadmium/cadmium-coachz.img.gz
 
     steps:
       - name: Checkout
