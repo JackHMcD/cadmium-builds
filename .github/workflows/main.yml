@@ -49,12 +49,12 @@ jobs:
             #cmd: speedy
             #dst: Cadmium/cadmium-speedy.img.gz
             
-          - id: trogdor
+          - id: homestar
             src: .
             os: debian:bullseye
             flags: -e '--privileged -v /dev:/dev'
-            cmd: trogdor
-            dst: Cadmium/cadmium-trogdor.img.gz
+            cmd: homestar
+            dst: Cadmium/cadmium-homestar.img.gz
 
     steps:
       - name: Checkout
